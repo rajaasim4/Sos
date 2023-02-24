@@ -1,0 +1,142 @@
+nav {
+  height: 150px;
+  width: 100%;
+  /* background-color: mediumaquamarine; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.Nav_logo {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: orange; */
+}
+.Main_nav {
+  width: 68%;
+  /* background-color: magenta; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Main_nav ul {
+  width: 70%;
+  /* background-color: maroon; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Main_nav ul li a {
+  font-family: var(--openfont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  color: white;
+}
+.Nav_language {
+  width: 5%;
+  position: absolute;
+  right: 20%;
+  /* background-color: #ffb548; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Nav_language select {
+  border: none;
+  outline: none;
+  width: 70px;
+  background-color: transparent;
+  color: white;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.Nav_language select option {
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+.Nav_language select option:hover {
+  color: #ffb548;
+}
+.Nav_icons {
+  width: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffb548;
+  font-size: 2rem;
+  /* background-color: mediumaquamarine; */
+}
+.line {
+  color: white;
+}
+.Hamburger {
+  width: 10%;
+}
+.Hamburger_icon {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.Hamburger {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .Nav_icons {
+    width: 13%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Hamburger {
+    display: flex;
+    width: 18%;
+    justify-content: flex-end;
+  }
+  .Main_nav {
+    /* width: 60%; */
+    width: 00%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 99;
+    transition: 0.3s linear;
+  }
+  .Main_nav_show {
+    width: 70%;
+  }
+  .Nav_logo {
+    width: 50%;
+    justify-content: flex-start;
+  }
+  .Nav_language {
+    position: absolute;
+    top: 40%;
+    right: 24%;
+  }
+  .Main_nav ul {
+    height: 70%;
+    flex-direction: column;
+  }
+  .Main_nav ul li a {
+    font-size: 18px;
+  }
+  .Nav_icons {
+    width: 40%;
+    padding: 30px 0px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .Nav_language {
+    right: 35%;
+  }
+}

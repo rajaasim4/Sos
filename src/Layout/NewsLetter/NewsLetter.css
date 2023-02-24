@@ -1,0 +1,132 @@
+.NewsLetter {
+  width: 100%;
+  height: 600px;
+  background: radial-gradient(
+      45.43% 53.19% at 50% 50%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0) 46.15%,
+      #080a0b 99.74%
+    ),
+    url("../../assets/Newsletter.png");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: 25% 100%;
+  background-position: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 90px;
+  box-sizing: border-box;
+  image-rendering: -webkit-optimize-contrast;
+}
+.NewsLetter_main {
+  width: 55%;
+  padding: 30px 10px;
+}
+.NewsLetter_main > * {
+  margin: 20px 0px;
+}
+.Common_h3_heading {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+
+  color: #ffffff;
+}
+.Common_h1_heading {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.NewsLetter_main p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* or 122% */
+
+  color: #ffffff;
+}
+.NewsLetter_input input {
+  background: rgba(255, 255, 255, 0.08);
+  height: 70px;
+  width: 428px;
+  padding-left: 30px;
+  outline: none;
+  border: none;
+  color: #f3af34;
+  font-size: 1rem;
+
+  border-radius: 5px;
+}
+.Main_btn {
+  height: 60px;
+  width: 260px;
+  outline: none;
+  color: black;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+  border-radius: 4px;
+}
+@media screen and (max-width: 1024px) {
+  .NewsLetter {
+    background-size: 30% 100%;
+  }
+  .NewsLetter_input {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+  }
+  .NewLetter_btn {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .NewsLetter {
+    background-position: 0%;
+  }
+  .NewsLetter_input input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .NewsLetter {
+    background-image: url("../../assets/Newsletter_bg_mb.png");
+    padding-right: 0px;
+    background-position: -17%;
+    background-size: 49% 80%;
+  }
+  .NewsLetter_main {
+    width: 70%;
+    /* background-color: olive; */
+  }
+  .NewsLetter_input input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .NewLetter_btn {
+    width: 190px;
+  }
+  .Common_h3_heading {
+    font-size: 18px;
+  }
+  .Common_h1_heading {
+    font-size: 28px;
+    line-height: 48px;
+  }
+}
